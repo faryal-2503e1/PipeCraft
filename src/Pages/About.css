@@ -1,0 +1,406 @@
+
+/* About Page */
+
+.about-page {
+  background: #fffaff;
+  color: #301747;
+  overflow: hidden;
+}
+
+/* Hero */
+
+.about-hero {
+  min-height: 440px;
+  padding: 70px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(120deg, #fbf4ff, #eee0ff);
+}
+
+.about-hero-content {
+  max-width: 570px;
+}
+
+.about-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ead7ff;
+  color: #823cc1;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.about-hero-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.about-hero-content h1 span,
+.story-content h2 span,
+.about-heading h2 span {
+  color: #9145c9;
+}
+
+.about-hero-content p {
+  font-size: 16px;
+  color: #71627b;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.about-btn,
+.mission-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 30px;
+  background: #823cc1;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-btn:hover,
+.mission-btn:hover {
+  background: #64249e;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-tag svg {
+  color: #963fce;
+  font-size: 18px;
+}
+
+.mission-text > span,
+.mission-text > span svg {
+  color: white;
+}
+
+
+/* Hero Image */
+
+.about-hero-art {
+  width: 500px;
+  height: 330px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  position: relative;
+  overflow: hidden;
+  background: #ead7ff;
+  box-shadow: 0 20px 45px rgba(130, 60, 193, 0.12);
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.about-hero-art:hover .about-hero-image {
+  transform: scale(1.05);
+}
+
+.about-art-label {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #823cc1;
+  padding: 11px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Our Story */
+
+.our-story {
+  padding: 90px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.story-image {
+  height: 370px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f4e6ff;
+}
+
+.story-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.story-image:hover .story-photo {
+  transform: scale(1.05);
+}
+
+.section-label {
+  color: #9145c9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.story-content h2 {
+  font-size: 37px;
+  line-height: 1.3;
+  margin: 18px 0;
+}
+
+.story-content p {
+  color: #776a80;
+  line-height: 1.9;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.story-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #823cc1;
+  font-weight: 700;
+}
+
+/* Our Values */
+
+.our-values {
+  padding: 80px 9%;
+  background: #f9f2ff;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-heading h2 {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.about-heading p {
+  color: #83758c;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  padding: 20px;
+  background: white;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(70, 30, 100, 0.06);
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(130, 60, 193, 0.12);
+}
+
+.value-image {
+  width: 100%;
+  height: 190px;
+  border-radius: 17px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #f2e4ff;
+}
+
+.value-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.value-card:hover .value-image img {
+  transform: scale(1.07);
+}
+
+.value-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  color: #82748b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Mission */
+
+.our-mission {
+  padding: 75px 9%;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 45px;
+  border-radius: 30px;
+  background: linear-gradient(120deg, #823cc1, #b16ae0);
+  color: white;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text > span {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.mission-content h2 {
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.mission-content p {
+  max-width: 600px;
+  margin-bottom: 28px;
+  line-height: 1.9;
+  color: #f4eaff;
+}
+
+.mission-btn {
+  background: white;
+  color: #823cc1;
+}
+
+.mission-btn:hover {
+  background: #f4eaff;
+  color: #64249e;
+}
+
+.mission-image {
+  width: 40%;
+  height: 250px;
+  border-radius: 22px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .about-hero-art {
+    width: 42%;
+  }
+
+  .about-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .our-story {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hero-art {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .our-story {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mission-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-art {
+    height: 280px;
+  }
+
+  .our-story,
+  .our-values {
+    padding: 55px 6%;
+  }
+
+  .story-content h2,
+  .about-heading h2 {
+    font-size: 29px;
+  }
+
+  .story-image {
+    height: 280px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-content {
+    padding: 35px 20px;
+  }
+
+  .mission-content h2 {
+    font-size: 29px;
+  }
+
+  .mission-image {
+    height: 220px;
+  }
+}

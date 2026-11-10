@@ -1,0 +1,229 @@
+
+.tutorials-page {
+  color: #49365d;
+  background: #fff;
+}
+
+
+.tutorial-hero {
+  min-height: 420px;
+  padding: 65px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  background: linear-gradient(120deg, #fbf4ff, #eee0ff);
+}
+
+.tutorial-hero-content {
+  max-width: 580px;
+}
+
+.tutorial-hero-art {
+  width: 390px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(130, 60, 193, 0.12);
+}
+
+.tutorial-hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .tutorial-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tutorial-hero-art {
+    width: 100%;
+    max-width: 390px;
+  }
+}
+
+.tutorial-tag {
+  color: #9970bd;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.tutorial-hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 20px 0;
+}
+
+.tutorial-hero h1 span {
+  color: #a879d1;
+}
+
+.tutorial-hero p {
+  max-width: 580px;
+  margin: auto;
+  color: #777;
+  line-height: 1.8;
+}
+
+.tutorial-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+.tutorial-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tutorial-heading > span {
+  color: #a879d1;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.tutorial-heading h2 {
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.tutorial-heading p {
+  color: #888;
+}
+
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.tutorial-card {
+  overflow: hidden;
+  border: 1px solid #eee5f5;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(90, 55, 120, 0.06);
+  transition: 0.3s;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(90, 55, 120, 0.12);
+}
+
+
+.tutorial-image {
+  height: 230px;
+  background: #f4eaff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tutorial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s;
+}
+
+.tutorial-card:hover .tutorial-image img {
+  transform: scale(1.06);
+}
+
+.tutorial-image small {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  color: #9870b9;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.tutorial-info {
+  padding: 25px;
+}
+
+.tutorial-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #a078c1;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tutorial-info h3 {
+  margin: 15px 0 10px;
+  font-size: 22px;
+}
+
+.tutorial-info p {
+  color: #888;
+  line-height: 1.7;
+}
+
+.tutorial-info details {
+  margin-top: 20px;
+  color: #8056a5;
+}
+
+.tutorial-info summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tutorial-info ol {
+  padding-left: 22px;
+  color: #777;
+  line-height: 2;
+}
+
+.tutorial-cta {
+  text-align: center;
+  padding: 65px 20px;
+  background: #f6edfc;
+}
+
+.tutorial-cta h2 {
+  font-size: 30px;
+}
+
+.tutorial-cta p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.tutorial-cta a {
+  display: inline-block;
+  background: #9870bd;
+  color: white;
+  text-decoration: none;
+  padding: 13px 28px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.tutorial-cta a:hover {
+  background: #79539d;
+}
+
+@media (max-width: 650px) {
+  .tutorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-hero {
+    padding: 60px 18px;
+  }
+
+  .tutorial-heading h2 {
+    font-size: 28px;
+  }
+}
